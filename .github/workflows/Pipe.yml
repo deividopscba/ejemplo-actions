@@ -1,6 +1,8 @@
 name: Hola Mundo
 
 on: 
+  schedule:
+    - cron: "*/5 * * * *" # se ejectuta cada 5 min
   push:
     branches:
       - main
