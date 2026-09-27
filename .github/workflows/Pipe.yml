@@ -14,3 +14,11 @@ jobs:
     steps:
       - name: Muestra mensaje Hola Mundo
         run: echo "Hola Mundo, Davide"
+        
+      - name: Checkout
+        uses: actions/checkout@v4.4.0
+
+      - name: Listar archivos del repo
+        run: |
+          echo "El repositorio ${{ github.repository }} contiene los siguientes archivos"
+          tree
